@@ -12,6 +12,7 @@ public static void main(String[] args) {
 	for(int i=0;i<n;i++) {
 		arr[i]=in.nextInt();
 	}
+	if(arr.length>=2) {
 	int b=2147483647;
 	int one=0;
 	int two=0;
@@ -27,6 +28,10 @@ public static void main(String[] args) {
 		}
 	}
 	System.out.println("The closest pair of elements near to zero is ("+one+","+two+")");
+	}
+	else {
+		System.out.println("No pairs available");
+	}
 	in.close();
 }
 }
