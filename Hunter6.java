@@ -14,6 +14,7 @@ public static void main(String[] args) {
 	}
 	System.out.println("The frist repeated element in the array is");
 	int count=0;
+	int flag=0;
 	for(int i=0;i<n;i++) {
 		for(int j=0;j<n;j++) {
 			if(arr[i]==arr[j]) {
@@ -21,10 +22,14 @@ public static void main(String[] args) {
 			}
 		}
 		if(count==2) {
+			flag=1;
 			System.out.println(arr[i]);
 			break;
 		}
 		count=0;
+	}
+	if(flag==0) {
+		System.out.println("No elements");
 	}
 	in.close();
 }
