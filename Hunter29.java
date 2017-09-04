@@ -16,6 +16,7 @@ public static void main(String[] args) {
     int a=in.nextInt();
     int sum=0;
     int max=0;
+    if(a<=n&&a>0) {
     for(int i=0;i<=n-a;i++) {
     	for(int j=i;j<a+i;j++) {
     		sum+=arr[j];
@@ -26,6 +27,10 @@ public static void main(String[] args) {
     	sum=0;
     }
     System.out.println("Sum of maximum in subarray is "+max);
+}
+else {
+	System.out.println("Subarray size should be in range between 0 and "+n);
+}	
     in.close();
 }
 }
